@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard PLN ULP Bireuen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Sistem Informasi Monitoring PLN ULP Bireuen</h1>
+  </header>
+
+  <section>
+    <h2>1. Formulir Permohonan Layanan</h2>
+    <form id="permohonan-form">
+      <label>Nama Pelanggan: <input type="text" required></label><br>
+      <label>IDPEL: <input type="text" required></label><br>
+      <label>Jenis Layanan:
+        <select>
+          <option value="baru">Pasang Baru</option>
+          <option value="tambah">Tambah Daya</option>
+        </select>
+      </label><br>
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>2. Rekapitulasi Gangguan (SAIDI / SAIFI)</h2>
+    <table id="tabel-gangguan">
+      <thead>
+        <tr>
+          <th>Tanggal</th>
+          <th>Wilayah</th>
+          <th>Durasi (Jam)</th>
+          <th>Pelanggan Terdampak</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>3. Dashboard Rating PLN Mobile</h2>
+    <div id="rating-container"></div>
+  </section>
+
+  <section>
+    <h2>4. Jadwal Pekerjaan Lapangan</h2>
+    <ul>
+      <li>Senin: Pemeriksaan Gardu A</li>
+      <li>Selasa: Pemeliharaan Jaringan Selatan</li>
+      <li>Rabu: Penanganan Gangguan RT 04</li>
+    </ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
